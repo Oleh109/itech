@@ -1,7 +1,8 @@
 @use "./styles/global";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Roboto&display=swap");
 
 html {
-  background-color: aqua;
+  background-color: var(--white-color);
   color: var(--black-color);
 }
 
@@ -14,9 +15,16 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+button {
   margin: 0;
   padding: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
 }
 
 a {
