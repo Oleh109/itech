@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "node": "^19.8.1",
     "vite": "^4.2.0"
   },
   "dependencies": {
