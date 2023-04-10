@@ -1,21 +1,21 @@
-@use "styles/variables" as v;
+@use "styles/variables" as var;
 
 .partners {
   $double-gap: calc(var(--gap) * 2);
+  z-index: var(--nice-index);
 
   width: 100%;
   position: relative;
   background-color: var(--creame-color);
 
   &__wave {
-    z-index: 69;
     top: -200px;
 
-    @media (min-width: v.$bigger-mobile) {
+    @media (min-width: var.$bigger-mobile) {
       top: -240px;
     }
 
-    @media (min-width: v.$bigger-tablet) {
+    @media (min-width: var.$bigger-tablet) {
       top: -180px;
     }
   }
@@ -30,7 +30,7 @@
   }
 
   &__heading {
-    z-index: 70;
+    z-index: var(--bigger-than-nice-index);
     margin-bottom: $double-gap;
   }
 
@@ -38,7 +38,7 @@
     margin: $double-gap 0;
     width: 100%;
     display: flex;
-    z-index: 70;
+    z-index: var(--bigger-than-nice-index);
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
